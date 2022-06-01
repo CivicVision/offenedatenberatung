@@ -6,7 +6,7 @@ footer.font-sans.md:py-8.px-4
         {{ range .Site.Menus.footer }}
           a.block.mt-4.md:inline-block.md:mt-0.text-grey-darker.hover:text-grey-dark.mr-4 class="{{ if $currentPage.IsMenuCurrent "main" . }}underline{{else}}no-underline{{end}}" href="{{.URL}}" {{.Name}}
         {{ end }}
-    .text-xs.pt-2.mt-2.text-grey-darker.text-center ©2020 Civic Vision. All rights reserved.
+    .text-xs.pt-2.mt-2.text-grey-darker.text-center &copy; {{ now.Format "2006" }} Civic Vision. All rights reserved.
     ul.text-grey-dark.list-reset.font-thin.flex.text-left.justify-center
       {{ $currentPage := . }}
       {{ range .Site.Menus.sub_footer }}
