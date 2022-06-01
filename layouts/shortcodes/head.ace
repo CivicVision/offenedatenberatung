@@ -1,6 +1,6 @@
 .mt-8.md:mt-32
-  h1.text-5xl Offene Daten Beratung
-  h2.text-xl.mt-4 Beratung für Kommunen und Kommunale IT-Dienstleister.
+  h1.text-4xl.md:text-5xl.max-w-screen-md.font-bold.leading-normal Offene Daten Beratung
+  h2.text-lg.md:text-xl.md:mt-8.font-semibold.mt-4 Beratung für Kommunen und Kommunale IT-Dienstleister.
   .mt-8.flex.align-center.justify-center
     img alt="Mila Frerichs" src="https://res.cloudinary.com/civicvision/image/upload/f_auto,q_auto,w_400,h_400,c_thumb,r_max,g_face/w_200/milafrerichs.com/resources/fullsizeoutput_2c6a.jpg"
-  h3.tracking-tight.text-2xl.font-light.mt-8 Ich helfe Ihnen bei der Umsetzung von Offenen Daten Strategien und berate Sie in allen Fragen rund um Offene Daten.
+  h3.tracking-tight.text-2xl.font-light.mt-8 Wir helfen Ihnen bei der Umsetzung von Offenen Daten Strategien und beraten Sie in allen Fragen rund um Offene Daten.
