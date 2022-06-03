@@ -1,5 +1,4 @@
 = content main
-  .font-sans.text-lg.text-grey-darkest.spaced-y-6
-    {{.Content}}
+  {{.Content}}
 = content footer
   {{ partial "footer" . }}
