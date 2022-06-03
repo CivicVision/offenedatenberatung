@@ -1,4 +1,5 @@
 module.exports = {
+  content: ['./layouts/**/*.{html,ace}', './content/*.md'],
   theme: {
     extend: {
       colors: {
@@ -14,6 +15,7 @@ module.exports = {
     }
   },
   plugins: [
+    require("@tailwindcss/typography"),
     require("tailwind-heropatterns")({
       variants: [],
       patterns: ["topography", "signal"],
