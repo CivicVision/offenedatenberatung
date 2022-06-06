@@ -1,0 +1,13 @@
+[*.{js,py}]
+charset = utf-8
+indent_style = space
+
+[*.py]
+indent_size = 4
+
+[*.{js,html,ace}]
+indent_size = 2
+indent_style = space
+
+[{package.json,.travis.yml}]
+indent_size = 2

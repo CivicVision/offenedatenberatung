@@ -13,6 +13,7 @@
     "start": "hugo --gc"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "tailwindcss": "^3"
   }
