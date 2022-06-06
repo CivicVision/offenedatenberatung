@@ -1,15 +1,24 @@
 - name: "Wie fange ich mit Open Data an?"
   type: "roadmapping"
-  text: "Wir erstellen gemeinsam eine nachhaltige Open Data Strategie"
-- name: "Metadata 1x1"
+  text: "Wir erstellen gemeinsam eine nachhaltige Open Data Strategie."
+  icon: group
+- name: "Metadaten 1x1"
   type: "roadmapping"
-  text: "Eine Startegiesession mit allem was Sie über Metadaten wissen sollten"
+  text: "Eine Startegiesession mit allem was Sie über Metadaten wissen sollten."
+  icon: presentation
+- name: "5 Sterne Open Data "
+  type: "roadmapping"
+  text: "Eine Startegiesession mit allem was Sie über das 5 Sterne Open Data Konzept wissen sollten."
+  icon: presentation
 - name: "Metadata Audit"
   type: "service"
-  text: "Wir analysieren Ihre Metadaten und zeigen Wege zur Verbesserung auf"
+  text: "Wir analysieren Ihre Metadaten und zeigen Wege zur Verbesserung auf."
+  icon: clipboard-list
+- name: "Datenpipeline"
+  type: "service"
+  text: "Wir helfen Ihnen automatisiert Daten aufzubereiten und zu veröffentlichen."
+  icon: terminal
 - name: "CKAN Erweiterungen"
   type: "service"
-  text: ""
-- name: "Haushaltsvisualisierungen"
-  type: "product"
-  text: ""
+  text: "Wir erstellen individuelle Komponenten für die Open-Source Datenplatform CKAN."
+  icon: terminal
