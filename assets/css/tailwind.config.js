@@ -1,10 +1,17 @@
 module.exports = {
-  content: ['./layouts/**/*.{html,ace}', './content/*.md'],
+  content: [
+  './layouts/index.ace',
+  './layouts/**/*.{html,ace}',
+  './content/*.md'
+],
+  safelist: [
+    'bg-amber-500',
+  ],
   theme: {
     extend: {
       colors: {
         civic: '#2b4c7e',
-        orange: '#c7850c',
+        accent: '#c7850c',
       },
       maxWidth: theme => {
         return {

@@ -1,5 +1,8 @@
 = doctype html
 {{ $style := resources.Get "css/styles.css" | resources.PostCSS (dict "config" "./assets/css/postcss.config.js") }}
+{{ if .Site.IsServer  }}
+{{ $style = $style | resources.ExecuteAsTemplate (printf "tailwind.dev.%v.css" now) . }}
+{{ end }}
 html lang=en
   head
     meta charset=utf-8
