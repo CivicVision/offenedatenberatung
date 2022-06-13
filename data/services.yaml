@@ -4,11 +4,11 @@
   icon: group
 - name: "Metadaten 1x1"
   type: "roadmapping"
-  text: "Eine Startegiesession mit allem was Sie über Metadaten wissen sollten."
+  text: "Eine Strategiesession mit allem was Sie über Metadaten wissen sollten."
   icon: presentation
 - name: "5 Sterne Open Data "
   type: "roadmapping"
-  text: "Eine Startegiesession mit allem was Sie über das 5 Sterne Open Data Konzept wissen sollten."
+  text: "Eine Strategiesession mit allem was Sie über das 5 Sterne Open Data Konzept wissen sollten."
   icon: presentation
 - name: "Metadata Audit"
   type: "service"
@@ -20,5 +20,5 @@
   icon: terminal
 - name: "CKAN Erweiterungen"
   type: "service"
-  text: "Wir erstellen individuelle Komponenten für die Open-Source Datenplatform CKAN."
+  text: "Wir erstellen individuelle Komponenten für die Open-Source Datenplattform CKAN."
   icon: terminal
