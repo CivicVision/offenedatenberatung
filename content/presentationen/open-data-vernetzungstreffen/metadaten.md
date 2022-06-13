@@ -8,14 +8,12 @@ Auf diesem präsentierte unserer Geschäftführer Mila Frerichs über DCAT-AP.de
 
 Die Folien seines Vortrages finden Sie hier:
 
-{{< slides "vodk-metadaten" >}}
-ab
+{{< slides "Metadaten & DCAT.de - Open Data Vernetzungstreffen 13.06.2022.pdf" >}}
 {{</slides>}}
 
 ## Zusammenfassung
 
 Hier eine kurze Zusammenfassung des Vortrages.  
-Die Zusammenfassung können Sie auch als PDF herunterladen
 
 __Metadaten helfen bei der:__
 
@@ -30,7 +28,11 @@ __Metadaten helfen bei der:__
 
 __Wichtige DCAT-AP.de Felder:__
 
-`dcatde:politicalGeocodingLevelURI`
+* dcatde:politicalGeocodingLevelURI
+* dcatde:politicalGeocodingURI
+* dct:temporal
+* dct:accrualPeriodicity
+* dct:references
 
 ## Zitate
 
@@ -38,13 +40,20 @@ __Wichtige DCAT-AP.de Felder:__
 Durch Ihren Input und Ihre Anforderungen werden Datenportale und Metadaten besser
 {{</ quote >}}
 
+{{< quote >}}
+Weniger Freitextfelder, mehr Auswahlfelder 
+{{</ quote >}}
 
-> Weniger Freitextfelder, mehr Auswahlfelder 
+{{< quote >}}
+Die Erfahrung im Umgang mit Metadaten hilft für den 4. und 5. Stern
+{{</ quote >}}
 
-> Die Erfahrung im Umgang mit Metadaten hilft für den 4. und 5. Stern
-
-> Nachnutzbarkeit und Auffindbarkeit steigt immens bei der Aufnahme empfohlener und optionaler Eigenschaften
-
+{{< quote >}}
+Nachnutzbarkeit und Auffindbarkeit steigt immens bei der Aufnahme empfohlener und optionaler Eigenschaften
+{{</ quote >}}
 
 
 ## Über Mila Frerichs
+Mila ist seit über 15 Jahren mit der Entwicklung von Software beschäftigt. Schon während des Abiturs und seines Studiums der Geoinformatik an der Westfälischen Wilhelms-Universität Münster arbeitete er als Entwickler.  
+Er arbeitet seit mehr als 10 Jahren mit Offenen Daten und hat sein ehrenamtliches Engagement zum Beruf gemacht. Die jahrelange Erfahrung im Ehrenamt bei Code for America und Code for Germany setzt er nun als Berater für Offene Daten ein, um Kommunen zu helfen das Open Data zum Erfolg wird.  
+Das Potential von Offenen Daten auszuschöpfen ist seine Mission. 
