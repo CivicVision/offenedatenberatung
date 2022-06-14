@@ -1,5 +1,11 @@
 ---
 title: Open Data Vernetzungstreffen 13.06.2022
+description: |
+  Am 13.06.2022 fand das Vernetzungstreffen Open Data für Kommunen mit dem Thema Metadaten statt.  
+  Auf diesem präsentierte unserer Geschäftführer Mila Frerichs über DCAT-AP.de
+  Eine Zusammenfassung und die Folien seines Vortrages finden Sie auf dieser Seite
+images:
+- https://res.cloudinary.com/civicvision/image/upload/v1655189697/milafrerichs.com/resources/presentations/ODVSlideTitle.jpg
 ---
 # Open Data Vernetzungstreffen 13.06.2022
 
