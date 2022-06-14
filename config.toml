@@ -4,6 +4,8 @@ title = "Offene Daten Beratung"
 enableEmoji = true
 
 [params]
-description = ""
+description = "Strategische Beratung für Kommunen und Kommunale IT-Dienstleister für (Linked) Open Data und Open Government"
+title = "Offene Daten Beratung"
+images = ["https://res.cloudinary.com/civicvision/image/upload/v1655190094/milafrerichs.com/resources/OffeneDatenBeratungServices.png"]
 cloudinary_url = "https://res.cloudinary.com/civicvision/image/upload"
 mainSections = ["articles", "services"]
