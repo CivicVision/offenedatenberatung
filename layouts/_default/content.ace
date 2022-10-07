@@ -1,7 +1,0 @@
-= content nav
-  {{ partial "nav" . }}
-= content main
-  .max-w-7xl.mx-auto
-    {{.Content}}
-= content footer
-  {{ partial "footer" . }}
