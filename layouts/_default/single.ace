@@ -1,7 +1,0 @@
-= content nav
-  {{ partial "nav" . }}
-= content main
-  .font-sans.text-lg.text-grey-800.max-w-7xl.mx-auto.prose
-    {{.Content}}
-= content footer
-  {{ partial "footer" . }}
