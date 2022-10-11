@@ -21,4 +21,5 @@ html lang=en
     = yield header
     = yield main
     = yield footer
+    script type="text/javascript" src="/js/anime.min.js"
     script type="text/javascript" src="/js/main.js"
