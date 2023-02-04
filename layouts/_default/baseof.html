@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    {{ $style := resources.Get "css/styles.css" | resources.PostCSS (dict "config" "./assets/css/postcss.config.js") }}
+    {{ if .Site.IsServer  }}
+    {{ $style = $style | resources.ExecuteAsTemplate (printf "tailwind.dev.%v.css" now) . }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    {{ if isset .Params "canonical" }}
+      <link rel="canonicalstylesheet" href="{{.Params.canonical}}">
+    {{ end }}
+
+    <meta name="description" content="{{ if or (.IsHome) (not (isset .Params "description")) -}} {{ $.Site.Params.description }} {{- else -}} {{ .Description }} {{- end }}">
+    <title>{{ if .IsHome -}} {{ .Site.Title }} {{- else -}} {{ .Title }} – {{ .Site.Title }} {{- end }}</title>
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+
+  </head>
+  <body>
+    {{ block "nav" .  }}{{ end }}
+    {{ block "header" .  }}{{ end }}
+    {{ block "main" .  }}{{ end }}
+    {{ block "footer" .  }}{{ end }}
+    <script type="text/javascript" src="/js/anime.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </body>
+</html>
