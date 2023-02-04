@@ -1,4 +1,0 @@
-= content main
-  {{.Content}}
-= content footer
-  {{ partial "footer" . }}
