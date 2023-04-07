@@ -1,0 +1,19 @@
+{{ define "nav"  }}
+  {{ partial "nav" . }}
+{{ end  }}
+{{ define "main"  }}
+<div class="bg-white px-6 py-32 lg:px-8">
+  <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+    <article>
+      <header>
+        <h1 class="font-sans text-4xl text-black font-bold mb-4">{{.Title}}</h1>
+      </header>
+      <div class="font-sans text-lg prose text-gray-800 leading-normal">
+        {{.Content}}
+      </div>
+  </div>
+</div>
+{{ end  }}
+{{ define "footer"  }}
+  {{ partial "footer" . }}
+{{ end  }}
