@@ -1,0 +1,5 @@
+<div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+  {{range first 5 (where .Site.RegularPages "Section" "resources") }}
+    {{ partial "resource.html" . }}
+  {{ end }}
+</div>
