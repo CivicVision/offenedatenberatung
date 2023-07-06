@@ -3,7 +3,6 @@ title: Offene Daten Beratung
 ---
 {{< hero >}}
 {{< feature >}}
-{{< kunden >}}
 {{< services >}}
 {{< cta "Haben Wir Ihr Interesse geweckt?">}}
 Lassen Sie uns gemeinsam das Potential Ihrer Daten ausschöpfen.
