@@ -9,3 +9,27 @@ title = "Offene Daten Beratung"
 images = ["https://res.cloudinary.com/civicvision/image/upload/v1655190094/milafrerichs.com/resources/OffeneDatenBeratungServices.png"]
 cloudinary_url = "https://res.cloudinary.com/civicvision/image/upload"
 mainSections = ["articles", "services"]
+
+[module]
+[[module.mounts]]
+source = "assets"
+target = "assets"
+[[module.mounts]]
+source = "hugo_stats.json"
+target = "assets/watching/hugo_stats.json"
+
+[build]
+[build.buildStats]
+enable = true
+[[build.cachebusters]]
+source = "assets/watching/hugo_stats\\.json"
+target = "styles\\.css"
+[[build.cachebusters]]
+source = "assets/css/(postcss|tailwind)\\.config\\.js"
+target = "css"
+[[build.cachebusters]]
+source = "assets/.*\\.(js|ts|jsx|tsx)"
+target = "js"
+[[build.cachebusters]]
+source = "assets/.*\\.(.*)$"
+target = "$1"

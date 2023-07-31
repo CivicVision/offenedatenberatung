@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    {{ $style := resources.Get "css/styles.css" | resources.PostCSS (dict "config" "./assets/css/postcss.config.js") }}
-    {{ if .Site.IsServer  }}
-    {{ $style = $style | resources.ExecuteAsTemplate (printf "tailwind.dev.%v.css" now) . }}
-    {{ end }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{/* styles */}}
+    {{ $options := dict "config" "./assets/css/postcss.config.js"  }}
+    {{ $styles := resources.Get "css/styles.css"  }}
+    {{ $styles = $styles | resources.PostCSS $options  }}
+    {{ if hugo.IsProduction  }}
+    {{ $styles = $styles | minify | fingerprint | resources.PostProcess  }}
+    {{ if .Site.IsServer   }}
+    {{ $styles = $styles | resources.ExecuteAsTemplate (printf "tailwind.dev.%v.css" now) .  }}
+    {{ end  }}
+    {{ end  }}
+    <link href="{{ $styles.RelPermalink  }}" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     {{ if isset .Params "canonical" }}
       <link rel="canonicalstylesheet" href="{{.Params.canonical}}">
@@ -17,6 +23,8 @@
     <title>{{ if .IsHome -}} {{ .Site.Title }} {{- else -}} {{ .Title }} – {{ .Site.Title }} {{- end }}</title>
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   </head>
   <body>
@@ -25,6 +33,5 @@
     {{ block "main" .  }}{{ end }}
     {{ block "footer" .  }}{{ end }}
     <script type="text/javascript" src="/js/anime.min.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
   </body>
 </html>

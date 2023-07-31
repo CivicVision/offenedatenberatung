@@ -1,0 +1,16 @@
+{{ define "nav"  }}
+  {{ partial "nav" . }}
+{{ end  }}
+{{ define "main"  }}
+<div x-data='{showScrollToTop: false}' >
+<div class="font-sans text-lg lg:p-2 text-grey-800 max-w-7xl lg:max-w-5xl mx-auto">
+    {{.Content}}
+</div>
+{{partial "bouncy" .}}
+{{partial "back-to-top" .}}
+</div>
+{{ end  }}
+{{ define "footer"  }}
+  {{ partial "footer_large" . }}
+{{ end  }}
+
