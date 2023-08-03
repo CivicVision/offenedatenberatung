@@ -9,9 +9,9 @@
     {{ $styles = $styles | resources.PostCSS $options  }}
     {{ if hugo.IsProduction  }}
     {{ $styles = $styles | minify | fingerprint | resources.PostProcess  }}
+    {{ end  }}
     {{ if .Site.IsServer   }}
     {{ $styles = $styles | resources.ExecuteAsTemplate (printf "tailwind.dev.%v.css" now) .  }}
-    {{ end  }}
     {{ end  }}
     <link href="{{ $styles.RelPermalink  }}" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -28,6 +28,7 @@
 
   </head>
   <body>
+    <div x-data="{{block "xdata" .}}{{ end }}">
     {{ block "nav" .  }}{{ end }}
     {{ block "header" .  }}{{ end }}
     {{ block "main" .  }}{{ end }}
