@@ -1,8 +1,8 @@
+{{ define "xdata"  }}{showScrollToTop: false}{{ end  }}
 {{ define "nav"  }}
-  {{ partial "nav" . }}
 {{ end  }}
 {{ define "main"  }}
-<div x-data='{showScrollToTop: false}' >
+<div x-data='' >
 <div class="font-sans text-lg lg:p-2 text-grey-800 max-w-7xl lg:max-w-5xl mx-auto">
     {{.Content}}
 </div>
