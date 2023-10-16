@@ -8,7 +8,20 @@
     {{ $style = $style | resources.ExecuteAsTemplate (printf "tailwind.dev.%v.css" now) . }}
     {{ end }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed"
+    sizes="57x57" href="https://res.cloudinary.com/civicvision/image/upload/v1697469112/favicon-apple-touch-114.png">
+    <link rel="apple-touch-icon-precomposed"
+    sizes="114x114" href="https://res.cloudinary.com/civicvision/image/upload/v1697469112/favicon-apple-touch-114.png">
+    <link rel="apple-touch-icon-precomposed"
+    sizes="72x72" href="https://res.cloudinary.com/civicvision/image/upload/v1697469112/favicon-apple-touch-144.png">
+    <link rel="apple-touch-icon-precomposed"
+    sizes="144x144" href="https://res.cloudinary.com/civicvision/image/upload/v1697469112/favicon-apple-touch-144.png">
+    <link rel="icon" type="image/vnd.microsoft.icon"
+    sizes="32x32 48x48" href="https://res.cloudinary.com/civicvision/image/upload/v1697469112/favicon.ico">
+    <link rel="icon" sizes="128x128" href="https://res.cloudinary.com/civicvision/image/upload/v1697469112/favicon_128.png">
+    <link rel="icon" href="https://res.cloudinary.com/civicvision/image/upload/v1697469112/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/civicvision/image/upload/v1697469112/favicon.ico">
+    
     {{ if isset .Params "canonical" }}
       <link rel="canonicalstylesheet" href="{{.Params.canonical}}">
     {{ end }}
