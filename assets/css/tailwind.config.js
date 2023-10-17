@@ -12,6 +12,13 @@ module.exports = {
       colors: {
         civic: '#2b4c7e',
         accent: '#c7850c',
+        'portal-100': '#D1EEEB',
+        'portal-800': '#55c8bd',
+        'portal-300': '#91d5ce',
+        'metadata-100': '#FFF7D6',
+        'metadata-200': '#FFEDA3',
+        'metadata-400': '#f2e3a7',
+        'metadata-800': '#d9be54'
       },
       maxWidth: theme => {
         return {
