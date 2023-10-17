@@ -1,0 +1,12 @@
+{{ define "nav"  }}
+  {{ partial "nav" . }}
+{{ end  }}
+{{ define "main"  }}
+<div class="font-sans text-lg lg:p-2 text-grey-800 mx-auto">
+    {{.Content}}
+</div>
+{{ end  }}
+{{ define "footer"  }}
+  {{ partial "footer" . }}
+{{ end  }}
+
