@@ -14,7 +14,6 @@
     {{ $styles = $styles | resources.ExecuteAsTemplate (printf "tailwind.dev.%v.css" now) .  }}
     {{ end  }}
     <link href="{{ $styles.RelPermalink  }}" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
     <link rel="apple-touch-icon-precomposed"
     sizes="57x57" href="https://res.cloudinary.com/civicvision/image/upload/v1697469112/favicon-apple-touch-114.png">
     <link rel="apple-touch-icon-precomposed"
