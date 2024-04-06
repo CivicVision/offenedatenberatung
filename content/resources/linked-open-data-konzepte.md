@@ -1,5 +1,5 @@
 ---
-title: Was sind URIs
+title: Was muss ich für Linked Open Data verstehen?
 image: "offenedatenberatung/resources/content/WasmussichfuerLODlernen.png"
 categories: ["Linked Open Data"]
 ---
