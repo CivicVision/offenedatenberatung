@@ -8,8 +8,8 @@
     <div class="relative flex items-end lg:col-span-5 lg:row-span-2">
 
 <div class="absolute -bottom-12 -top-20 left-0 right-1/2 z-10 rounded-br-6xl bg-blue-600 text-white/10 md:bottom-8 lg:-inset-y-32 lg:left-[-100vw] lg:right-full lg:-mr-40"><svg aria-hidden="true" class="absolute inset-0 h-full w-full"><defs><pattern id=":S1:" width="128" height="128" patternUnits="userSpaceOnUse" x="100%" y="100%" patternTransform="translate(112 64)"><path d="M0 128V.5H128" fill="none" stroke="currentColor"></path></pattern></defs><rect width="100%" height="100%" fill="url(#:S1:)"></rect></svg></div>
-      <div class="relative z-10 mx-auto flex w-64 rounded-xl bg-slate-600 shadow-xl md:w-full md:-top-24" >
-<img alt="" fetchpriority="high" width="960" height="1284" decoding="async" data-nimg="1" class="-mt-16 w-full" style="color:transparent" srcset="" src="https://res.cloudinary.com/civicvision/image/upload/v1714379689/offenedatenberatung/resources/images/Group_3.svg">
+      <div class="relative z-10 mx-auto flex w-64 rounded-xl shadow-xl md:w-full md:-top-24 bg-tv-screen bg-no-repeat bg-center bg-cover py-10 px-6" >
+<img alt="" fetchpriority="high" width="960" height="1284" decoding="async" data-nimg="1" class="w-full" style="color:transparent" srcset="" src="https://res.cloudinary.com/civicvision/image/upload/v1714889977/offenedatenberatung/resources/images/workshop-odd-muenchen-slides.png">
       </div>
     </div>
     <div class="lg:col-span-7 lg:pb-14 lg:pl-16 lg:pr-0 px-4 relative sm:px-6 xl:pl-20" style=" "><div class="hidden lg:absolute lg:-top-32 lg:bottom-0 lg:left-[-100vw] lg:right-[-100vw] lg:block lg:bg-slate-100"></div><figure class="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left" style="
@@ -43,8 +43,18 @@
     </div>
   </div>
 </header>
+<section id="summary" aria-labelledby="summary-title" class="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32">
+    <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:max-w-4xl lg:px-12">
+        <h2 class="inline-flex items-center rounded-full px-4 py-1 text-blue-600 ring-1 ring-inset ring-blue-600" id="summary-title">
+            <span class="font-mono text-sm" aria-hidden="true"></span><span class="ml-3 text-base font-medium tracking-tight">Zusammenfassung</span>
+        </h2>
+        <div class="mt-8 prose">
+          {{.Content}}
+        </div>
+    </div>
+</section>
 
-<section id="resources" aria-labelledby="resources-title" class="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32">
+<section id="resources" aria-labelledby="resources-title" class="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-24">
     <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:max-w-4xl lg:px-12">
         <h2 class="inline-flex items-center rounded-full px-4 py-1 text-blue-600 ring-1 ring-inset ring-blue-600" id="resources-title">
             <span class="font-mono text-sm" aria-hidden="true"></span><span class="ml-3 text-base font-medium tracking-tight">Services</span>
