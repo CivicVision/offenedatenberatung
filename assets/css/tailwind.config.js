@@ -15,6 +15,9 @@ module.exports = {
           'testimonial': '100px',
         }
       },
+      backgroundImage: {
+        'tv-screen': "url('https://res.cloudinary.com/civicvision/image/upload/v1714379689/offenedatenberatung/resources/images/Group_3.svg')",
+      }
     }
   },
   plugins: [
